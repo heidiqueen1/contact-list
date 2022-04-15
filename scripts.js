@@ -37,6 +37,16 @@ function print() {
     console.table (myList);
   }
 
+/* Creo una función para mi algoritmo de ordenamiento*/
+
+function orderSurname(first,second){
+  return first.surname.localeCompare(second.surname);
+}
+
+function orderList (){
+  myList = myList.sort(orderSurname)  
+}
+
 /* Se inicia la ejecución de las funciones*/
 /*Mi lista predefinida*/
 
@@ -68,6 +78,8 @@ print();
 addContact();
 print();
 eraseContact();
+print();
+orderList();
 print();
 
 
