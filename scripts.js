@@ -13,7 +13,7 @@ Publica tu código en Github, en tu repositorio contact-list crea un branch llam
 function addContact (){
   const contact = 
     {
-    id: parseInt(prompt("Ingrese un número de id")),
+    id: countId++,
     name: prompt("Ingrese el nombre del contacto"),
     surname: prompt("Ingrese el apellido del contacto"),
     cellphone: parseInt(prompt("Ingrese un número de teléfono")),
@@ -50,23 +50,25 @@ function orderList (){
 /* Se inicia la ejecución de las funciones*/
 /*Mi lista predefinida*/
 
+let countId = 1;
+
 let  myList = [
   {
-   id: 1,
+   id: countId ++,
    name: "Heidi",
    surname: "Sanchez",
    cellphone: 099864455,
    location: ["Quito", "Azcasubi"]
   },
   {
-    id: 2,
+    id: countId ++,
     name: "Moises",
     surname: "Dupuy",
     cellphone: 099869955,
     location: ["Caracas", "Venezuela"]
    },
    {
-    id: 3,
+    id: countId ++,
     name: "Nelly",
     surname: "García",
     cellphone: 099869111,
